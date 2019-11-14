@@ -1,4 +1,4 @@
-module github.com/nomad-software/vend
+module github.com/mysteriumnetwork/vend
 
 require (
 	github.com/fatih/color v1.7.0

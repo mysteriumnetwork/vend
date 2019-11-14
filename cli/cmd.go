@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/nomad-software/vend/output"
+	"github.com/mysteriumnetwork/vend/output"
 )
 
 // UpdateModule makes sure the module is updated ready to vendor the

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/nomad-software/vend/cli"
-	"github.com/nomad-software/vend/file"
+	"github.com/mysteriumnetwork/vend/cli"
+	"github.com/mysteriumnetwork/vend/file"
 )
 
 func main() {

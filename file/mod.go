@@ -3,7 +3,7 @@ package file
 import (
 	"encoding/json"
 
-	"github.com/nomad-software/vend/output"
+	"github.com/mysteriumnetwork/vend/output"
 )
 
 // ParseModJSON parses the mode file into a data structure.

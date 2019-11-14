@@ -8,7 +8,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/nomad-software/vend/output"
+	"github.com/mysteriumnetwork/vend/output"
 )
 
 // CopyPkgDependencies copies package level dependencies.

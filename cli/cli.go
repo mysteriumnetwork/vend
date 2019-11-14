@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	"github.com/nomad-software/vend/file"
+	"github.com/mysteriumnetwork/vend/file"
 )
 
 // Options contains CLI arguments passed to the program.
