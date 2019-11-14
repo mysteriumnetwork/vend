@@ -23,8 +23,7 @@ func main() {
 
 			file.CopyPkgDependencies(mod, deps)
 		} else {
-
-			file.CopyModuleDependencies(deps)
+			file.CopyModuleDependencies(deps, options.ReplaceDeps)
 		}
 	}
 }

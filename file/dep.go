@@ -42,3 +42,9 @@ type Dep struct {
 	Sum      string
 	GoModSum string
 }
+
+// ReplaceDep represents replace directive
+type ReplaceDep struct {
+	Path     string
+	WithPath string
+}

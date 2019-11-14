@@ -6,3 +6,5 @@ require (
 	github.com/mattn/go-isatty v0.0.4 // indirect
 	golang.org/x/sys v0.0.0-20181218192612-074acd46bca6 // indirect
 )
+
+go 1.13

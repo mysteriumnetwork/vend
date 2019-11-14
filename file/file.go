@@ -37,13 +37,21 @@ dep:
 }
 
 // CopyModuleDependencies copies module level dependencies transitively.
-func CopyModuleDependencies(deps []Dep) {
+func CopyModuleDependencies(deps []Dep, replaceDeps []ReplaceDep) {
 	deleteVendorDir()
 	var report string
 
 	for _, d := range deps {
 		fmt.Fprintf(output.Stdout, "vend: copying %s (%s)\n", d.Path, d.Version)
 		dest := path.Join(vendorDir(), d.Path)
+		for _, replaceD := range replaceDeps {
+			if replaceD.WithPath == d.Path {
+				output.Info("replace %s => %s", replaceD.Path, replaceD.WithPath)
+				report += fmt.Sprintf("# replace %s => %s\n", replaceD.Path, replaceD.WithPath)
+				dest = path.Join(vendorDir(), replaceD.Path)
+				break
+			}
+		}
 		copy(d.Dir, dest)
 
 		report += fmt.Sprintf("# %s %s\n", d.Path, d.Version)
